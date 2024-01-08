@@ -1,0 +1,237 @@
+*{
+
+    font-family: sans-serif;
+}
+.body-regis{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%
+}
+.Register-container{
+    width: 400px;
+    height: fit-content;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+  margin-top: 50px;
+}
+#h{
+    text-align: center;
+    font-size: 38px;
+    color: black;
+    margin-bottom: 80px;
+}
+
+.inputBox {
+    position: relative;
+  }
+  
+  .inputBox input {
+    padding: 15px 20px;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    color: rgb(4, 4, 4);
+    width: 80px;
+    margin-left: 10px;
+    border: 1px solid#424343;
+    font-size: 1em;
+  }
+  
+  .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 15px 20px;
+    pointer-events: none;
+    font-size: 1em;
+    transition: 0.4s cubic-bezier(0.05, 0.81, 0, 0.93);
+    color: #141514;
+    font-size: 21px;
+    letter-spacing: 0.1em;
+
+  }
+  
+  .inputBox input:focus ~ span,
+  .inputBox input:valid ~ span {
+    font-size: 20px;
+    transform: translateX(14px) translateY(-7.5px);
+    padding: 0 5px;
+    border-radius: 2px;
+    background: #ffffff;
+    letter-spacing: 0em;
+   color: #4db597;
+   
+  }
+.inputBox :focus{
+    border-color: #4db597;
+}
+.Sumnit{
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 49px;
+    font-size: 26px;
+    background-color: #4db597;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.Sign-email{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Sign-email p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.span{
+    color: rgb(52, 149, 115);
+}
+
+/* -------------------------------------- */
+.or-section{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.liner{
+    width: 320px;
+    height: 30px;
+   color: gray;
+    
+}
+.line{
+    border: 1px solid gray;
+    width: 140px;
+    display: inline-block;
+
+}
+
+.button {
+    min-width: 300px;
+    display: flex;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    gap: 0.75rem;
+    color: rgb(65, 63, 63);
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .6s ease;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+  }
+  
+  .button svg {
+    height: 24px;
+  }
+  
+
+
+
+  .button1 {
+    
+    display: flex;
+    min-width: 300px;
+    background-color: #000;
+    color: #ffffff;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 4px;
+    gap: 0.75rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+   
+  }
+  
+  .button1 svg {
+    height: 30px;
+  }
+  
+ 
+  .button2 {
+    display: flex;
+    background-color: #039be5;
+    background-image: linear-gradient(to top right, #0163E0,#18ACFE);
+    color: #ffffff;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 4px;
+    gap: 0.75rem;
+    border: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    min-width: 300px;
+    margin-bottom: 30px;
+   
+  }
+  
+  .button2 svg {
+    height: 30px;
+  }
+  
+  @media only  screen and (min-width:800px  ){
+
+    .button2,.button1,.button{
+      min-width: 310px;
+      margin-top: 10px;
+    }
+    .FROm{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+
+  @media only  screen and (min-width:1024px  ){
+    .body-regis{
+        align-items: center;
+    }
+    .logo{
+        margin-top: 0%;
+    }
+    .button2,.button1,.button{
+     min-width: 320px;
+      margin-top: 20px;
+    }
+    .FROm{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }

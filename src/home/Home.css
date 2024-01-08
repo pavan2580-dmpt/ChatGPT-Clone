@@ -1,0 +1,610 @@
+*{
+
+    margin: 0%;
+}
+.Main-Container{
+    width: 100%;
+    height: 100vh;
+    margin: 0%;
+    background-color: rgb(59, 59, 76);
+
+}
+.Sub-Container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(59, 59, 76);
+}
+.button_display{
+    display: none;
+}
+.SideBar{
+    width: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(35, 35, 45) ;
+    
+}
+.Close{
+    text-align: end;
+    background-color: rgb(35, 35, 45) ;
+    border-bottom: 1px solid white;
+    height: 80px;
+}
+.Plus{
+    display: none;
+}
+.Close_Icon{
+    background-color: aliceblue;
+    
+}
+.History{
+    width: 100%;
+    height: 744px;
+    background-color: rgb(35, 35, 45) ;
+    border-bottom: 1px solid white;
+    overflow-y: auto;
+    color: white;
+    font-size: 25px;
+}
+.Logout{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(35, 35, 45) ;
+
+}
+.Navigation{
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.Hamburger{
+    color: white;
+    margin-left: 10px;
+
+}
+.Add{
+    font-size: 40px;
+    font-weight: bold;
+    width: 40px;
+    text-align: center;
+    margin-right: 10px;
+}
+.AI-Content{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.Toggle-Content{
+    height: 85%;   
+}
+.Toggle-content::-webkit-scrollbar {
+    width: 0px; 
+  }
+.Text{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    font-family: sans-serif;
+}
+.Body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.Example,.Capabilites,.Limitations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+.Exe,.Cap,.Lim{
+    font-size: 25px;
+    width: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Example label{
+    width: 95%;
+    height: fit-content;
+    border: 2px solid rgb(57, 57, 57);
+    box-shadow: 3px 3px 5px 5px rgb(37, 37, 62);
+    border-radius: 7px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color:rgb(72, 72, 94) ;
+}
+.Capabilites label{
+    width: 95%;
+    height: fit-content;
+    border: 2px solid rgb(57, 57, 57);
+    box-shadow: 3px 3px 5px 5px rgb(37, 37, 62);
+    border-radius: 7px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color:rgb(72, 72, 94) ;
+}
+.Limitations label{
+    width: 95%;
+    height: fit-content;
+    border: 2px solid rgb(57, 57, 57);
+    box-shadow: 3px 3px 5px 5px rgb(37, 37, 62);
+    border-radius: 7px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color:rgb(72, 72, 94) ;
+}
+
+
+
+
+.Footer{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.SUB-LOGOUT{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.GET-EMAIL-FORM-DB{
+    width: 250px;
+    font-size: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.GET-EMAIL{
+    text-overflow:ellipsis;
+    color: white;
+    overflow: hidden;
+}
+.THREEDOTS{
+    color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.THREEDOTS:hover{
+    color: rgb(105, 105, 101);
+    cursor: pointer;
+}
+
+.Prompt{
+    width: 80%;
+    height: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.Text-Prompt{
+    border: none;
+    outline: none;
+    width:80% ;
+    height: fit-content;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+
+}
+.Text-Prompt::placeholder{
+    color: white;
+}
+.pop_up_div{
+    width: 80%;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(34, 33, 37);
+    border-radius: 15px;
+    overflow: hidden;
+    display: none;
+}
+.Pop_up_Heading{
+    width: 100%;
+    height: 88px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    font-size: 25px;
+    border-bottom: 0.1mm solid rgb(171, 171, 171);
+   } 
+
+
+.POP_up_settings{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+.Clear_chat_btn{
+    display: inline-block;
+    background:red;
+    border:none;
+    color: white;
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.Clear_chat_btn:hover{
+    background-color: rgb(195, 6, 6);
+
+}
+
+._____toggle_content_ai_____{
+    width: 100%;
+    height: 80vh;
+    padding-left: 100px;
+    padding-top: 100px;
+    overflow-y: auto;
+    color: white;
+    font-size: 20px;
+
+}
+
+.History::-webkit-scrollbar {
+    width: 0px; 
+  }
+  .History:hover::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  .History::-webkit-scrollbar-thumb {
+    background-color: none;
+    border-radius: 6px; 
+  }
+  
+  .History:hover::-webkit-scrollbar-thumb {
+    background-color: gray;
+  }
+  /* ================================= */
+ 
+
+
+
+
+.History p{
+    padding: 15px 0px 15px 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 20px;
+    font-size: 15px;
+    display: inline-block;
+    
+    
+}
+.History p:hover{
+    background-color:rgb(72, 72, 94) ;
+}
+
+.paragraph {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+  }
+  
+  .removeButton {
+    display: none;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    margin-left: 2px;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+  
+  .paragraph:hover .removeButton {
+    display: inline-block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------- */
+
+@media only screen and (min-width:820px ) {
+
+    .History{
+        height: 80%;
+    }
+   
+    .Example label{
+        width: 500px;
+    }
+    .Capabilites label{
+        width: 500px;
+    }
+    .Limitations label{
+        width: 500px;
+    }
+    .DROP-up{
+       min-width: 300px;
+
+    }
+    .Clear_chat_btn{
+        display: inline-block;
+        background:red;
+        border:none;
+        color: white;
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    
+    .Clear_chat_btn:hover{
+        background-color: rgb(195, 6, 6);
+    
+    }
+   
+}
+
+
+
+
+@media only screen and (min-width:1200px){
+.H1{
+    font-size: 45px;
+    position: relative;
+    top: 80px;
+   
+}
+.SUB-LOGOUT{
+
+    height: fit-content;
+}
+
+
+    .SideBar{
+        width: 20%;
+        display:block;
+    }
+    .Logout{
+        height: fit-content;
+    }
+    .GET-EMAIL{
+        width: 200px;
+    }
+.AI-Content{
+    width:80%;
+    overflow: hidden;
+}
+
+.Navigation{
+    display: none;
+}
+.Body{
+    flex-direction: row;
+    height: 80%;
+    gap: 20px;
+    align-items: center;
+    box-sizing: border-box;
+}
+.Text{
+    overflow: hidden;
+}
+.DROP-up{
+    width: 150px;
+}
+
+
+.Example,.Capabilites,.Limitations{
+    width: 300px;
+}
+.Exe,.Cap,.Lim{
+    width: 300px;
+}
+.button_display{
+    display: inline;
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.Plus{
+    color: white;
+    display: inline;
+}
+.Example label{
+    width: 280px;
+    height: fit-content;
+}
+.Example label:hover{
+    background-color:rgb(35, 35, 45);
+    cursor: pointer;
+}
+.Capabilites label{
+    width: 280px;
+    height: fit-content;
+}
+.Limitations label{
+    width: 250px;
+    height: fit-content;
+}
+.Footer{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Close{
+    height: 80px;
+    text-align: start;
+}
+.Close_Icon{
+    display: none;
+}
+.Prompt{
+    width: 800px;
+    margin-top: 0%;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Text-Prompt{
+    border: none;
+    outline: none;
+    width:80% ;
+    height: fit-content;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+
+}
+.Text-Prompt::placeholder{
+    color: white;
+}
+
+}
+
+.SUB-LOGOUT:hover{
+    background-color: rgb(65, 62, 81);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.DROP-up{
+    border: 1px solid white;
+    position: absolute;
+    width: 200px;
+    height: fit-content;
+    top: 65%;
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+    left: 20px;
+    display: none;
+    border-radius: 10px;
+    background-color: rgb(65, 62, 81);
+    overflow: hidden;
+}
+.HElp,.Settings,.res-logout{
+    /* text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    padding-top: 15px;
+    gap: 5px;
+    align-items: center;
+}
+.HElp:hover,.Settings:hover,.res-logout:hover{
+    background-color: rgb(51, 42, 42);
+}
+
+@media only screen and (min-width:1600px){
+    .Body{
+        padding-left: 20%;
+    }
+   .pop_up_div{
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(34, 33, 37);
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    display: none;
+   }
+   .Pop_up_Heading{
+    width: 100%;
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    font-size: 25px;
+    border-bottom: 0.1mm solid rgb(171, 171, 171);
+   } 
+
+.POP_up_settings{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+}
+
+.Clear_chat_btn{
+    background:red;
+    border:none;
+}
+
+.Clear_chat_btn:hover{
+    background-color: rgb(195, 6, 6);
+
+}
+.Prompt{
+    position: absolute;
+    left:280px;
+}
+    }
+    

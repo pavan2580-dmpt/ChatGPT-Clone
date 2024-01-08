@@ -1,0 +1,253 @@
+*{
+    background-color: rgba(236,236,241,var(--tw-text-opacity));
+    margin: 0%;
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: 0%;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.new{
+    color: white;
+    font-size: 40px;
+    margin-right: 20px;
+}
+.new:hover{
+    border: 1px solid white;
+    width: 25px;
+
+}
+.sidemenu {
+  width: 0%;
+  height: 99vh;
+  background-color: rgb(35, 35, 35);
+    transition: 1s ease;
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+  
+}
+  .close{
+    background-color: rgba(52,53,65,var(--tw-bg-opacity));
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+  }
+
+.close_icon{
+    background-color: rgb(255, 255, 255);
+}
+.history{
+    width: 100%;
+    height: 800px;
+    background-color: aliceblue;
+}
+.logout{
+    width: 100%;
+    height: 70px;
+    background-color: aquamarine;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+.Ai-content{
+    width: 100%;
+    height: 80vh;
+}
+.toggle-content{
+    width: 100%;
+    height: 80vh;
+    overflow: scroll;
+
+}
+
+.toggle-content::-webkit-scrollbar {
+    width: 0px; 
+  }
+.body{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    
+}
+.example,.capabilites,.limitations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.exe,.cap,.lim{
+    font-size: 30px;
+    width: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.example label{
+    width: 400px;
+    height: fit-content;
+    border: 2px solid rgb(35, 34, 34);
+    box-shadow: 3px 3px 5px 5px rgb(45, 35, 61);
+    border-radius: 7px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color:rgb(65, 57, 78) ;
+}
+.capabilites label{
+    width: 400px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 3px 3px 5px 5px rgb(45, 35, 61);
+    border-radius: 7px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color:rgb(65, 57, 78) ;
+}
+
+.limitations label{
+    width: 400px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 3px 3px 5px 5px rgb(45, 35, 61);
+    border-radius: 7px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color:rgb(65, 57, 78) ;
+}
+.footer{
+    width: 100%;
+    height: 80px;
+    border: 2px solid white;
+    bottom: -10px;
+    background-color: aliceblue;
+    position: absolute;
+}
+
+@media only screen and (min-width:770px){
+    .sidemenu{
+        width: 300px;
+    }
+    .sub-container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+    /* h1{
+        position: relative;
+        top: 150px;
+        font-size: 40px;
+    } */
+    .navbar{
+        display: none;
+    }
+.body{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.example,.capabilites,.limitations{
+    width: fit-content;
+    height: fit-content;
+}
+
+    .example label{
+        width: 150px;
+        height: 60px;
+        font-size: 15px;
+
+    }
+    .capabilites label{
+        width: 150px;
+        height: 60px;
+        font-size: 15px;
+    }
+    .limitations label{
+        width: 150px;
+        height: 60px;
+        font-size: 15px;
+    }
+
+
+
+
+
+
+  
+}
+
+
+
+
+
+
+@media only screen and (min-width:1600px) {
+    .navbar{
+        height: 80px;
+        justify-content: end;
+    }
+    .body{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+       
+    }
+    .toggle-content{
+        height: 800px;
+       
+    }
+/* h1{
+    position: relative;
+    top: 100px;
+} */
+    .sidemenu{
+        width: 300px;
+        height: 95vh;
+        
+        
+    }
+    .close_icon{
+        display: none;
+    }
+    .ham{
+        display: none;
+    }
+    .Ai-content{
+        width: calc(100% - 310px);
+        margin-left: 300px;
+    }
+    .footer{
+        width: calc(100% - 310px);
+        bottom: 5px;
+    }
+    .close{
+        height:80px;
+    }
+    .history{
+        height: 720px;
+    }
+    .logout{
+        height: 102px;
+    }
+    
+}

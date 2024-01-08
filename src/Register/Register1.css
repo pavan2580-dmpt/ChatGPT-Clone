@@ -1,0 +1,218 @@
+*{
+
+    font-family: sans-serif;
+}
+.BODY-REGIS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%
+}
+.REGISTER-CONTAINER{
+    width: 400px;
+    height: fit-content;
+}
+.LOGO{
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+.BANNER h1{
+    text-align: center;
+    font-size: 38px;
+}
+.BANNER p{
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+   
+}
+.INPUTBOX {
+    position: relative;
+    margin-left: 10%;
+  }
+  
+  .INPUTBOX input {
+    padding: 15px 20px;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    color: rgb(4, 4, 4);
+    width: 70%;
+    margin-left: 10px;
+    border: 1px solid#424343;
+    font-size: 1em;
+  }
+  
+  .INPUTBOX span {
+    position: absolute;
+    left: 0;
+    padding: 15px 20px;
+    pointer-events: none;
+    font-size: 1em;
+    transition: 0.4s cubic-bezier(0.05, 0.81, 0, 0.93);
+    color: #4db597;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+
+  }
+  
+  .INPUTBOX input:focus ~ span,
+  .INPUTBOX input:valid ~ span {
+    font-size: 20px;
+    transform: translateX(14px) translateY(-7.5px);
+    padding: 0 5px;
+    border-radius: 2px;
+    background: #ffffff;
+    letter-spacing: 0em;
+   
+   
+  }
+  .INPUTBOX:focus{
+    border-color: #4db597;
+  }
+.SUNMIT{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    height: 49px;
+    font-size: 26px;
+    background-color: #4db597;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+
+}
+
+.SIGN-EMAIL p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.SPAN{
+    color: rgb(52, 149, 115);
+}
+
+/* -------------------------------------- */
+.OR-SEC{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.LINER{
+  width: 320px;
+  height: 30px;
+ color: gray;
+  
+}
+.LINE{
+  border: 1px solid gray;
+  width: 140px;
+  display: inline-block;
+
+}
+
+.BUTTON {
+    min-width: 270px;
+    display: flex;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    gap: 0.75rem;
+    color: rgb(65, 63, 63);
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .6s ease;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .BUTTON svg {
+    height: 24px;
+  }
+  
+
+
+
+  .BUTTON1 {
+    
+    display: flex;
+    width: 260px;
+    background-color: #000;
+    color: #ffffff;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 4px;
+    gap: 0.75rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+   
+  }
+  
+  .BUTTON1 svg {
+    height: 30px;
+  }
+  
+ 
+  .BUTTON2 {
+    display: flex;
+    background-color: #039be5;
+    background-image: linear-gradient(to top right, #0163E0,#18ACFE);
+    color: #ffffff;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 4px;
+    gap: 0.75rem;
+    border: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    width: 260px;
+    margin-bottom: 30px;
+   
+  }
+  
+  .BUTTON2 svg {
+    height: 30px;
+  }
+  
+  @media only  screen and (min-width:800px  ){
+
+    .BUTTON2,.BUTTON1,.BUTTON{
+      margin-top: 10px;
+    }
+
+
+  }
+
+  @media only  screen and (min-width:1024px  ){
+
+    .BUTTON2,.BUTTON1,.BUTTON{
+      margin-top: 20px;
+      min-width: 320px;
+    }
+
+
+  }
